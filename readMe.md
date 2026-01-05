@@ -1,0 +1,1 @@
+A google chrome extension that allows your kid to solve math problems at a given date and time and the extension prevents the student from going to any other site at that time until the all questions are completed (similar to lockdown browser).
