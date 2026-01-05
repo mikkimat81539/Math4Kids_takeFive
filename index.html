@@ -11,7 +11,7 @@
 			<div id="userNumber" style="user-select: none;">	
 				<label for="numQuestions">Number of Questions &nbsp;</label>
 				<input name="numQuestions" id="numQuestions" 
-				type="text" minlength="1" minlength="2" size="3" placeholder="#" required>
+				type="text" minlength="1" maxlength="2" size="3" placeholder="#" required>
 			</div>
 			
 			<div id="userSubject" style="user-select: none;">
@@ -33,6 +33,22 @@
 			
 				<input type="checkbox" name="time" id="time" class="subjectBox">	
 				<label for="time">Time</label>
+			</div>
+		</fieldset>
+		
+		<br>		
+
+		<fieldset style="display: flex; gap: 10px;">
+			<legend>Study Duration (Date Range)</legend>
+			
+			<div id="fromDateContainer">
+				<label for="fromDate">From &nbsp;</label>
+				<input type="date" name="fromDate" id="fromDate" required>
+			</div>
+			
+			<div id="toDateContainer">
+				<label for="toDate">To &nbsp;</label>
+				<input type="date" name="toDate" id="toDate">
 			</div>
 		</fieldset>
 		<br>
