@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Math For Kids</title>
+</head>
+
+<body>
+	<form>
+		<fieldset>
+			<legend>Session Setup</legend>
+			<div id="userNumber" style="user-select: none;">	
+				<label for="numQuestions">Number of Questions &nbsp;</label>
+				<input name="numQuestions" id="numQuestions" 
+				type="text" minlength="1" minlength="2" size="3" placeholder="#" required>
+			</div>
+			
+			<div id="userSubject" style="user-select: none;">
+				<p>Subjects</p>
+				<input type="checkbox" name="addition" id="addition" class="subjectBox">
+				<label for="addition">Addition</label>
+				
+				<input type="checkbox" name="subtraction" id="subtraction" class="subjectBox">
+				<label for="subtraction">Subtraction</label>
+				
+				<input type="checkbox" name="multiplication" id="multiplication" class="subjectBox">
+				<label for="multiplication">Multiplication</label>
+				
+				<input type="checkbox" name="division" id="division" class="subjectBox">	
+				<label for="division">Division</label>
+
+				<input type="checkbox" name="money" id="money" class="subjectBox">
+				<label for="money">Money</label>
+			
+				<input type="checkbox" name="time" id="time" class="subjectBox">	
+				<label for="time">Time</label>
+			</div>
+		</fieldset>
+	</form>
+
+	<script src="main.js"></script>
+</body>
+
+</html>

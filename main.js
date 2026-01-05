@@ -1,0 +1,2 @@
+/* have number input set to only numbers
+store number in local storage when save button is pressed*/
