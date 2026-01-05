@@ -1,7 +1,7 @@
 /*
-save checked subjects in local storage
-remove if unchecked
-
+for date range set minimum of from date to current date
+for to date, set min to anything after current date
+save date range to local storage using JSON format {from: mm/dd/yyyy to: ,mm/dd/yyyy}
 if page is refreshed, show user settings from local storage"
 */
 
@@ -29,7 +29,8 @@ function numberInputStorage(){
 function subjectStorage(){
 	for (let i=0; i < subjectBox.length; i++) {
 		const subjectNameAttr = subjectBox[i].getAttribute('name')
-		
+		subjectBox[i].style.cursor = "pointer"
+	
 		if(subjectBox[i].checked){
 			localStorage.setItem(subjectNameAttr, 'selected')
 		}
