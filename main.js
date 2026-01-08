@@ -8,6 +8,7 @@ if page is refreshed, show user settings from local storage"
 const numQuestions = document.getElementById('numQuestions')
 const subjectBox = document.querySelectorAll('.subjectBox')
 const submitBtn = document.getElementById('submitBtn')
+const fromDate = document.getElementById('fromDate')
 
 numQuestions.addEventListener('input', numberInputStorage)
 
@@ -41,6 +42,19 @@ function subjectStorage(){
 	}
 
 }
+
+function DateRange(){
+	const minAttr = fromDate.getAttribute('min')
+	const currDay = new Date()
+	const year = currDay.getFullYear()
+	const month = currDay.getMonth()
+	const date = currDay.getDate()
+
+	const dateFormat = `${String(year)}-${String(month +1).padStart(2, "0")}-${String(date).padStart(2, "0")}` 
+	fromDate.setAttribute("min", dateFormat)
+}
+
+DateRange()
 
 submitBtn.addEventListener('click', (ev) => {
 	ev.preventDefault()
